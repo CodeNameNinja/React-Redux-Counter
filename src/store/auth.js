@@ -4,7 +4,7 @@ const initalAuthState = {
     isAuthenticated: false,
   };
   
-export const authSlice = createSlice({
+const authSlice = createSlice({
     name: "authentication",
     initialState: initalAuthState,
     reducers: {
@@ -16,3 +16,6 @@ export const authSlice = createSlice({
       },
     },
   });
+
+export const authActions = authSlice.actions;
+export default authSlice.reducer;
